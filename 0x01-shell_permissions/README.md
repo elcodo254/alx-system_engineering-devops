@@ -3,3 +3,4 @@ switch to betty
 2-groups group script
 change owner of hello to betty
 create empty hello file
+add execute permission to hello
