@@ -9,3 +9,4 @@ give permission to everyone
 give permission to all users only
 set mode of hello
 mirror permissions
+give execute permission to directories
