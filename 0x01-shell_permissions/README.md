@@ -5,3 +5,4 @@ change owner of hello to betty
 create empty hello file
 add execute permission to hello
 give multiple permisions on hello
+give permission to everyone
