@@ -1,1 +1,2 @@
-chmod ugo+x bee
+#!/bin/bash
+ugo+x hello
