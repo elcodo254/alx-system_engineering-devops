@@ -12,3 +12,4 @@ mirror permissions
 give execute permission to directories
 create directory with permissions
 change group
+give symbolic links permission
