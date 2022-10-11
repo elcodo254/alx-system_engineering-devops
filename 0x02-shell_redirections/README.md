@@ -17,3 +17,4 @@ display count of pattern
 display lines after pattern
 display inverse of pattern
 display lines starting with a letter
+replace characters in line
