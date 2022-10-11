@@ -12,3 +12,4 @@ remove file from current wd
 count directories
 sort files from newest to oldest
 unique files
+display lines containing pattern
