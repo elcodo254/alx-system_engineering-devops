@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -v Mem "bin" /etc/passwd
+grep -iv "bin" /etc/passwd
