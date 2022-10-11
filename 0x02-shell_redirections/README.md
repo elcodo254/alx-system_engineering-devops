@@ -14,3 +14,4 @@ sort files from newest to oldest
 unique files
 display lines containing pattern
 display count of pattern
+display lines after pattern
