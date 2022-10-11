@@ -11,3 +11,4 @@ duplicate last line of file
 remove file from current wd
 count directories
 sort files from newest to oldest
+unique files
