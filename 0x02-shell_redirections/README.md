@@ -8,3 +8,4 @@ display third line of file
 create file name with characters
 redirect display to file
 duplicate last line of file
+remove file from current wd
