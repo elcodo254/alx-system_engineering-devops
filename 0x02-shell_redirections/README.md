@@ -10,3 +10,4 @@ redirect display to file
 duplicate last line of file
 remove file from current wd
 count directories
+sort files from newest to oldest
