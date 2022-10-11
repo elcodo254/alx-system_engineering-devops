@@ -7,3 +7,4 @@ display first 10 lines
 display third line of file 
 create file name with characters
 redirect display to file
+duplicate last line of file
