@@ -4,4 +4,5 @@ Shell variables expansions projects
 2-path: Add a directory to PATH
 3-paths: Count directories in PATH
 4-global_variables: Display global environment
-5-local_variables: Display local and environment variables 
+5-local_variables: Display local and environment variables
+6-create_local_variable: Create new local variable 
