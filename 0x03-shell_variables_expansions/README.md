@@ -6,4 +6,5 @@ Shell variables expansions projects
 4-global_variables: Display global environment
 5-local_variables: Display local and environment variables
 6-create_local_variable: Create new local variable
-7-create_global_variable: Create global variable 
+7-create_global_variable: Create global variable
+8-true_knowledge: Arithmetics involving variables 
