@@ -11,3 +11,4 @@ Shell variables expansions projects
 9-divide_and_rule:  Arithmetics involving environment variable(division)
 10-love_exponent_breath: Arithmetics involving environment variables(exponential)
 11-binary_to_decimal: Convert base 2 to base 10
+12-combinations: Combination of all possible letters
