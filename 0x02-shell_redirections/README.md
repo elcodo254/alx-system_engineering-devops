@@ -22,3 +22,4 @@ delete specified characters
 reverse input
 get users and home directories from field
 empty directories display
+list files with specified extension and sort
