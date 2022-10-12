@@ -21,3 +21,4 @@ replace characters in line
 delete specified characters
 reverse input
 get users and home directories from field
+empty directories display
