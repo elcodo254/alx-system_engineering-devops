@@ -9,3 +9,4 @@ Shell variables expansions projects
 7-create_global_variable: Create global variable
 8-true_knowledge: Arithmetics involving environment variables and numbers(addition)
 9-divide_and_rule:  Arithmetics involving environment variable(division)
+10-love_exponent_breath: Arithmetics involving environment variables(exponential)
