@@ -15,3 +15,4 @@ Shell variables expansions projects
 13-print_float: Print a number with two decimal points
 100-decimal_to_hexadecimal: Convert decimal variable to hexadecimal
 101-rot13: Rot13 encryption on a text
+102-odd: Print everyother line from text starting from the first
