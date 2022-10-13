@@ -14,3 +14,4 @@ Shell variables expansions projects
 12-combinations: All possible combination of two letters
 13-print_float: Print a number with two decimal points
 100-decimal_to_hexadecimal: Convert decimal variable to hexadecimal
+101-rot13: Rot13 encryption on a text

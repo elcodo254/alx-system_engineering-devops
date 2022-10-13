@@ -1,0 +1,3 @@
+#!/bin/bash
+#rot13 encryption substitutes letters a-m with n-z in-place
+tr 'A-Za-z' 'N-ZA-Mn-za-m'
