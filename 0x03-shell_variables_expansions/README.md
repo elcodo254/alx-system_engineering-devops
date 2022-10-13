@@ -13,3 +13,4 @@ Shell variables expansions projects
 11-binary_to_decimal: Convert base 2 to base 10
 12-combinations: All possible combination of two letters
 13-print_float: Print a number with two decimal points
+100-decimal_to_hexadecimal: Convert decimal variable to hexadecimal
