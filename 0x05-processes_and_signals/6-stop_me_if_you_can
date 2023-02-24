@@ -3,4 +3,4 @@
 #Requirements:
 #You cannot use kill or killall
 
-pkil -f 4-to_infinity_and_beyond
+pkill -f 4-to_infinity_and_beyond
