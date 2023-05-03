@@ -1,36 +1,31 @@
 #!/usr/bin/env bash
-#Configure your Nginx server so that /redirect_me is redirecting to another page.
+#Installs nginx,listening to port 80 on your web-01 and print string at root
+#Configures /redirect_me as a "301 Moved Permanently".
+#Custom 404 error page
 
-sudo apt-get update
-sudo apt-get -y install nginx
+apt-get update
+apt-get -y install nginx
+mkdir -p /var/www/html
 echo 'Hello World!' > /var/www/html/index.html
-echo -e "Ceci n'est pas une page" > /var/www/html/custom_404.html
-new_config=\
+echo "Ceci n'est pas une page" > /var/www/html/custom_404.html
+server_config=\
 "server {
-	listen 80 default_server;
-	listen [::]:80 default_server;
-	root /var/www/html;
-	index index.html index.htm index.nginx-debian.html;
-	server_name _;
-	
+        listen 80 default_server;
+        listen [::]:80 default_server;
+        root /var/www/html;
+        index index.html index.htm index.nginx-debian.html;
+        server_name _;
+        location / {
+                try_files \$uri \$uri/ =404;
+        }
 	error_page 404 /custom_404.html;
-	location  /custom_404.html {
-            root /var/www/html/;
-            internal;
-	location / {
-		try_files \$uri \$uri/ =404;
+	location /custom_404 {
+	  internal;
 	}
-
-	if (\$request_filename ~ redirect_me){
-	    rewrite ^ https://https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;
-	}
+        if (\$request_filename ~ redirect_me){
+                rewrite ^ https://https://www.youtube.com/watch?v=QH2-TGUlwu4
+                permanent;
+        }
 }"
-
-echo "$new_config" > /etc/nginx/sites-available/default
-
-if [ "$(pgrep nginx)" -le 0 ];
-then
-	service nginx start
-else
-	service nginx restart
-fi;
+echo "$server_config" > /etc/nginx/sites-available/default
+service nginx restart
