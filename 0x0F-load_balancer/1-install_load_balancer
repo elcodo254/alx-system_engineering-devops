@@ -29,5 +29,5 @@ listen stats
    	 stats uri /
    	 stats refresh 5s
    	 stats realm Haproxy\ Statistics
-" >> cd /etc/haproxy/haproxy.cfg
+" >> /etc/haproxy/haproxy.cfg
 service haproxy start
