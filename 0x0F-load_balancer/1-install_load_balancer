@@ -20,9 +20,8 @@ frontend ellaw.tech
 
 backend web-servers
 	 balance roundrobin
-	 server 166918-web-01 52.3.251.137 check
-	 server 166918-web-02 18.209.223.79 check
-
+	 server 166918-web-01 54.144.85.149 
+	 server 166918-web-02 18.206.202.210
 listen stats
    	 bind *:8080
    	 stats enable
