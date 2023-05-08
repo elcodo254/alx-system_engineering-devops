@@ -24,7 +24,7 @@ frontend local_server
 
 backend web-servers
 	balance roundrobin
-	server 166918-web-01 54.144.85.149i:80 check
+	server 166918-web-01 54.144.85.149:80 check
 	server 166918-web-02 18.206.202.210:80 check
 " >> /etc/haproxy/haproxy.cfg
 service haproxy start
