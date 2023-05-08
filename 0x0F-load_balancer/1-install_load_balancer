@@ -17,20 +17,14 @@ echo "ENABLED=1" >> /etc/default/haproxy
 cp /etc/haproxy/haproxy.cfg{,.original}
 
 echo "
-frontend ellaw.tech
-	 bind 100.25.143.156:80
-	 mode http
-	 default_backend web-servers
+frontend local_server 
+	bind *:80
+	mode http
+	default_backend web-servers
 
 backend web-servers
-	 balance roundrobin
-	 server 166918-web-01 54.144.85.149 
-	 server 166918-web-02 18.206.202.210
-listen stats
-   	 bind *:8080
-   	 stats enable
-   	 stats uri /
-   	 stats refresh 5s
-   	 stats realm Haproxy\ Statistics
+	balance roundrobin
+	server 166918-web-01 54.144.85.149i:80 check
+	server 166918-web-02 18.206.202.210:80 check
 " >> /etc/haproxy/haproxy.cfg
 service haproxy start
