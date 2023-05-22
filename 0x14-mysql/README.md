@@ -1,5 +1,3 @@
-All dev-ops projects
-Configuration management projects
 What is the main role of a database
 What is a database replica
 What is the purpose of a database replica
