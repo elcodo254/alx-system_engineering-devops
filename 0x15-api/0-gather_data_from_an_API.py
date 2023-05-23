@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Using REST api returns to-do list for employees given an id"""
 import requests
-import sy
+import sys
 
 
 if __name__ == "__main__":
@@ -12,5 +12,5 @@ if __name__ == "__main__":
     inall = [todo.get("title") for todo in todos if todo.get(
         "completed") is True]
     print("Employee {} is done with tasks({}/{}):".format(user.get(
-        "name"), len(inall) len(todos)))
+        "name"), len(inall), len(todos)))
     [print("\t {}".format(i)) for i in inall]
