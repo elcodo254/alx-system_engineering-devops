@@ -15,4 +15,4 @@ if __name__ == "__main__":
     with open("{}.csv".format(sys.argv[1]), "w", newline="") as csv_file:
         writer = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
         [writer.writerow([sys.argv[1], username, todo.get(
-        "completed"), todo.get("title")]) for todo in todos]
+            "completed"), todo.get("title")]) for todo in todos]
