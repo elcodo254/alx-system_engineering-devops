@@ -1,13 +1,13 @@
 #Fix bug by increasing amount of traffic handled on nginx server
 
 #increase ULIMIT
-exec {
+exec { 'fix-default':
   command => 'sed -i "s/15/4096/" /etc/default/nginx',
   path    => '/usr/local/bin/:/bin/'
 } ->
 
 #restart nginx
-exec {
+exec { 'nginx-restart':
   command => 'nginx restart'
-  path    => 'etc/init.d/'
+  path    => '/etc/init.d/'
 }
