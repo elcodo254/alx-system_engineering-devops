@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#fizzbuzz on multiples of 3 and 5, fizz on 3, buzz on 5 in list format(100)
+
+
+for num in {1..100}
+do
+  if ((num % 3 == 0 && num % 5 == 0 ))
+  then
+    echo "FizzBuzz"
+  elif (( num % 3 == 0 ))
+  then
+    echo "Fizz"
+  elif (( num % 5 == 0 ))
+  then
+    echo "Buzz"
+  else
+    echo "$num"
+  fi
+done
