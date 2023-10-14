@@ -11,5 +11,5 @@ def number_of_subscribers(subreddit):
                           headers={'User-Agent': 'custom'},
                           allow_redirects=False)
         return rq.json().get('data').get('subscribers')
-    except:
+    except AttributeError:
         return 0
